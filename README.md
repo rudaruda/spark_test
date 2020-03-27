@@ -32,3 +32,12 @@ reduceByKey faz agregação dos valores indexados.
 ```
 6. Explique o que o código Scala abaixo faz.
 >val textFile = sc.textFile("hdfs://...")<br>val counts = textFile.flatMap(line => line.split(" "))<br>.map(word => (word, 1))<br>.reduceByKey(_ + _)<br>counts.saveAsTextFile("hdfs://...")
+```
+RESPOSTA
+  + val textFile = sc.textFile("hdfs://...")
+    Criação do RDD "textFile" a apartir de leitura de arquivo externo (ou seja, lê o arquivo do HDFS)
+  + val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
+    Seta variavel "counts", esta fazendo map reduce, para obter a contagem de cada palavra no arquivo
+  + counts.saveAsTextFile("hdfs://...")
+    Exporta objeto para arquivo HDFS.
+```
