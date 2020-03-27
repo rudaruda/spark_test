@@ -34,10 +34,10 @@ reduceByKey faz agregação dos valores indexados.
 >val textFile = sc.textFile("hdfs://...")<br>val counts = textFile.flatMap(line => line.split(" "))<br>.map(word => (word, 1))<br>.reduceByKey(_ + _)<br>counts.saveAsTextFile("hdfs://...")
 ```
 RESPOSTA
-  + val textFile = sc.textFile("hdfs://...")
+  > val textFile = sc.textFile("hdfs://...")
     Cria o RDD "textFile" a apartir de leitura de arquivo externo (ou seja, lê o arquivo do HDFS com spark)
-  + val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
+  > val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
     Seta variavel "counts", esta fazendo map reduce, para obter a contagem de cada palavra no arquivo
-  + counts.saveAsTextFile("hdfs://...")
+  > counts.saveAsTextFile("hdfs://...")
     Exporta objeto para arquivo HDFS.
 ```
