@@ -16,3 +16,7 @@ Resposta
 '''Resposta'''
 5. *GroupByKey* é menos eficiente que *reduceByKey* em grandes dataset. Por quê?
 '''Resposta'''
+
+```
+RESPOSTA
+```
