@@ -31,8 +31,4 @@ groupByKey faz agregação dos valores.
 reduceByKey faz agregação dos valores indexados.
 ```
 6. Explique o que o código Scala abaixo faz.
->val textFile = sc.textFile("hdfs://...")
->val counts = textFile.flatMap(line => line.split(" "))
->.map(word => (word, 1))
-.reduceByKey(_ + _)
-counts.saveAsTextFile("hdfs://...")
+>val textFile = sc.textFile("hdfs://...")<br>val counts = textFile.flatMap(line => line.split(" "))<br>.map(word => (word, 1))<br>.reduceByKey(_ + _)<br>counts.saveAsTextFile("hdfs://...")
