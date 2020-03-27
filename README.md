@@ -6,7 +6,7 @@ Teste Spark
 RESPOSTA
 O comando "cache()" realizará o armazenameno do RDD na memória enquanto o comando
 "persist(level: StorageLevel)" fará o armazenamento no disco. E para limpar a mémoria do
-cache fazemos uso do comando "unpersist()".<br>
+cache fazemos uso do comando "unpersist()".
 Com essas opções podemos fazer o balanceamento de memória para ganho de performance da aplicação.
 ```
 2. O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em
@@ -43,7 +43,8 @@ RESPOSTA
   > val textFile = sc.textFile("hdfs://...")
     Cria o RDD "textFile" a apartir de leitura de arquivo externo (ou seja, lê o arquivo do HDFS com spark)
   > val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
-    Seta objeto "counts", que esta fazendo map reduce, para obter a contagem de cada string<br>separada por " " (espaço) no arquivo (ou seja, a contagem das palavras contidas no arquivo)
+    Seta objeto "counts", que esta fazendo map reduce, para obter a contagem de cada string
+    separada por " " (espaço) no arquivo (ou seja, a contagem das palavras contidas no arquivo)
   > counts.saveAsTextFile("hdfs://...")
     Exporta objeto para arquivo HDFS.
 ```
