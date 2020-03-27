@@ -19,7 +19,8 @@ TA
 ```
 4. Explique com suas palavras o que é **Resilient Distributed Datasets** (RDD).
 ```
-RESPOST
+*RESPOSTA*
+_R_esilient _D_istributed _D_atasets
 A
 ```
 5. **GroupByKey** é menos eficiente que *reduceByKey* em grandes dataset. Por quê?
