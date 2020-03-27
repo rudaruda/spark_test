@@ -1,24 +1,29 @@
 # spark_test
 Teste Spark
 
-1. Qual o objetivo do comando *cache* em Spark?
+1. Qual o objetivo do comando **cache** em Spark?
 ```
-RESPOSTA
+RES
+POSTA
 ```
 2. O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em
 MapReduce. Por quê?
 ```
-RESPOSTA
+RESPO
+STA
 ```
-3. Qual é a função do *SparkContext*?
+3. Qual é a função do **SparkContext**?
 ```
-RESPOSTA
+RESPOS
+TA
 ```
-4. Explique com suas palavras o que é *Resilient Distributed Datasets* (RDD).
+4. Explique com suas palavras o que é **Resilient Distributed Datasets** (RDD).
 ```
-RESPOSTA
+RESPOST
+A
 ```
-5. *GroupByKey* é menos eficiente que *reduceByKey* em grandes dataset. Por quê?
+5. **GroupByKey** é menos eficiente que *reduceByKey* em grandes dataset. Por quê?
 ```
-RESPOSTA
+RESPOS
+TA
 ```
