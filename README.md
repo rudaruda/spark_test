@@ -27,6 +27,6 @@ Resilient Distributed Datasets = Conjunto de dados distribuídos resilientes
 5. **groupByKey** é menos eficiente que **reduceByKey** em grandes dataset. Por quê?
 ```
 RESPOSTA
-groupByKey faz agregação dos os valores.
+groupByKey faz agregação dos valores.
 reduceByKey faz agregação dos valores indexados.
 ```
