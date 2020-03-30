@@ -28,8 +28,8 @@ controlar jobs, criar RDDs e variáveis de broadcast.
 ```
 RESPOSTA
 Resilient Distributed Datasets = Conjunto de dados distribuídos resilientes
-É um objeto de big data que é uma coleção de registros somente para leitura com
-armazenado paralelo. Outro ponto importante é que que possui atributos
+Coleção de registros somente para leitura com armazenado paralelo (objeto big data).
+Outro ponto importante é que que possui atributos
 proprios de acesso/calculo com acesso rápido que um arquivo natural do HDFS.
 ```
 5. **groupByKey** é menos eficiente que **reduceByKey** em grandes dataset. Por quê?
@@ -47,8 +47,8 @@ RESPOSTA
   > val textFile = sc.textFile("hdfs://...")
     Cria o RDD "textFile" carregando arquivo externo (HDFS)
   > val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_ + _)
-    Seta objeto "counts", que faz map reduce do arquivo, ouse seja, obtem a contagem de cada string
+    Seta objeto "counts", armazenando o map reduce do arquivo, ou seja, contagem de cada string
     separada por " " (espaço) no arquivo.
   > counts.saveAsTextFile("hdfs://...")
-    Devolve resultado para arquivo (Exporta objeto para arquivo HDFS).
+    Devolve resultado para arquivo externo (Exporta objeto para arquivo HDFS).
 ```
