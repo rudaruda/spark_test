@@ -4,10 +4,11 @@ Teste Spark
 1. Qual o objetivo do comando **cache** em Spark?
 ```
 RESPOSTA
-O comando "cache()" faz o armazenameno do objeto na memória enquanto o comando
-"persist()" faz o armazenamento no disco. E para limpar a mémoria do
+O comando "cache()" faz o armazenameno do RDD na memória enquanto o comando
+"persist()" deixa o armazenamento em disco. Para limpar a mémoria do
 cache fazemos uso do comando "unpersist()".
-Com essas opções podemos fazer o balanceamento de memória para ganho de performance da aplicação.
+Com essas ações evitando processamentos desnecessários e há oportunidade de fazer o balanceamento
+de memória para ganho de performance da aplicação. 
 ```
 2. O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em
 MapReduce. Por quê?
