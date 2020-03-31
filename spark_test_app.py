@@ -98,6 +98,5 @@ print('   '+str(tt_size))
 print('Finish program\n')
 
 exit(input('...PRESS ANY KEY TO EXIT...'))
-exit(0)
 
 # ----------------------------------------spark_test_app.py---------------------------------------
