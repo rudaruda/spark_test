@@ -58,7 +58,9 @@ RESPOSTA
 # Teste Prático
 
 O teste prático do Spark foi desenvolvimento python (pyspark).
+
 E pode ser conferido no script [spark_test_app.py](spark_test_app.py)
 
 Resultado:
+
 ![Spark_Teste_Result](print.png)
