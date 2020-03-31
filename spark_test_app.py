@@ -91,7 +91,7 @@ tt_avg = int(tt_avg[0][0])
 print('   '+str(tt_avg))
 df_day = spark.sql("SELECT DT, SUM(1) AS QTD FROM dftable WHERE RESPONSE='404' GROUP BY DT ORDER BY 1").toDF('DATA','QTD').cache()
 df_day.coalesce(1).write.option("header", "true").mode("overwrite").format("csv").save('spark_test_404_day')
-print('   (by day in file: "spark_text_404_day.csv")')
+print('   (by day in file: "spark_test_404_day")')
 
 print('\n5. O total de bytes retornados?')
 tt_size = df.agg(F.sum("SIZE")).collect()[0][0]
