@@ -17,7 +17,6 @@ print('\n + Load file: NASA_access_log_Jul95.gz')
 # ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
 rdd_Jul95 = sc.textFile( 'ftp://anonymous:anonymous@ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz' ).cache()
 # count() 1891715
-# where 404 count():10845
 print('   Lines: ' + str(rdd_Jul95.count()))
 print('...Top 3 em Jul95')
 for i in rdd_Jul95.take(3): print(i)
@@ -26,7 +25,6 @@ print('\n + Load file: NASA_access_log_Aug95.gz')
 # ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
 rdd_Aug95 = sc.textFile( 'ftp://anonymous:anonymous@ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz' ).cache()
 # count(): 1569898 
-# where 404 count():10056
 print('   Lines: ' + str(rdd_Aug95.count()))
 print('...Top 3 em Aug95') 
 for i in rdd_Aug95.take(3): print(i)
