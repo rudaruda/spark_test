@@ -63,3 +63,10 @@ E pode ser conferido no script: [spark_test_app.py](spark_test_app.py).
 
 Resultado:<br>
 ![Spark_Teste_Result](print.png)
+
+--------
+# RUN CODE
+
+Para executar o cógido:
+1. Vá para a pastado do projeto
+2. Run code: **PYTHONSTARTUP=spark_test_app.py pyspark**
